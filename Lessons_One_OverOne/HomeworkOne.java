@@ -20,6 +20,7 @@ public class HomeworkOne {
         timeMinute = Scanner.nextInt();
         double resultSpeed = distanceKm/(timeMinute/60);
         System.out.println("Нужная скорость автомобиля " + resultSpeed + " :Xкм/ч");
+        Scanner.close();
 
 
 
