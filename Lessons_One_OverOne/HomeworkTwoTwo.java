@@ -20,8 +20,8 @@ public class HomeworkTwoTwo {
             System.out.println("Первое число нечетное");
         } else if (numberTwo%2 == 1){
             System.out.println("Второе число нечетное");
-        }else {
+        }else
             System.out.println("Третье число нечетное");
-        }
+
     }
 }
