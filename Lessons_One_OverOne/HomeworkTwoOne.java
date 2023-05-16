@@ -1,3 +1,4 @@
+import javax.swing.*;
 import java.sql.SQLOutput;
 import java.util.Scanner;
 
@@ -47,6 +48,7 @@ public class HomeworkTwoOne {
             System.out.println("Вам нужно сделать два шага");
         }
         scanner.close();
+
     }
 
     }
