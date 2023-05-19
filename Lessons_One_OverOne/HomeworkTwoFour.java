@@ -8,7 +8,7 @@ public class HomeworkTwoFour {
                 Пример ввода: 8 0 9 0 1 20 Пример ввода: 8 25 9 10 1 10
         Вывод: Не успеете Вывод: Не успеете*/
         Scanner scanner = new Scanner(System.in);
-        int timeHourNow, timeMinuteNow, timeHourJob, timeMinuteJob, timeHourWay, timeMinuteWay, convertertimeNow, convecterTimeJob, convecterTimeWay;
+        int timeHourNow, timeMinuteNow, timeHourJob, timeMinuteJob, timeHourWay, timeMinuteWay, convecterTimeWay, convertertimeNow, convecterTimeJob;
         System.out.println("Введите 6 чисел. Первые два текущее время, Вторые две - время на которое нужно успеть добраться на работу и последние три время вашего пути в минутах ");
         timeHourNow = scanner.nextInt();
         timeMinuteNow = scanner.nextInt();
