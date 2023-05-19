@@ -16,6 +16,7 @@ public class HomeworkTwoFour {
         timeMinuteJob = scanner.nextInt();
         timeHourWay = scanner.nextInt();
         timeMinuteWay = scanner.nextInt();
+        scanner.close();
         convertertimeNow = timeMinuteNow + timeHourNow * 60;
         convecterTimeJob = timeMinuteJob + timeHourJob * 60;
         convecterTimeWay = timeMinuteWay + timeHourWay * 60;
