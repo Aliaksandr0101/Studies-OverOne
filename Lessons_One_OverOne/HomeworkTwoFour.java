@@ -9,7 +9,7 @@ public class HomeworkTwoFour {
         Вывод: Не успеете Вывод: Не успеете*/
         Scanner scanner = new Scanner(System.in);
         int timeHourNow, timeMinuteNow, timeHourJob, timeMinuteJob, timeHourWay, timeMinuteWay, convecterTimeWay, convertertimeNow, convecterTimeJob;
-        System.out.println("Введите 6 чисел. Первые два текущее время, Вторые две - время на которое нужно успеть добраться на работу и последние три время вашего пути в минутах ");
+        System.out.println("Введите 6 чисел. Первые два текущее время, Вторые две - время на которое нужно успеть добраться на работу и последние две время вашего пути в минутах ");
         timeHourNow = scanner.nextInt();
         timeMinuteNow = scanner.nextInt();
         timeHourJob = scanner.nextInt();
@@ -20,7 +20,7 @@ public class HomeworkTwoFour {
         convertertimeNow = timeMinuteNow + timeHourNow * 60;
         convecterTimeJob = timeMinuteJob + timeHourJob * 60;
         convecterTimeWay = timeMinuteWay + timeHourWay * 60;
-        int substraction = convecterTimeJob - convertertimeNow;
+        int substraction = Math.abs(convecterTimeJob - convertertimeNow);
         if (convecterTimeWay <= substraction)
             System.out.println("Успеете на работу");
         else System.out.println("Не успеете");

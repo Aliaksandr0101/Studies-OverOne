@@ -19,7 +19,7 @@ public class HomeworkTwoSix {
         convertertimeNow = timeMinuteNow + timeHourNow * 60;
         convecterTimeJob = timeMinuteJob + timeHourJob * 60;
         /*convecterTimeWay = timeMinuteWay + timeHourWay * 60;*/
-        int substraction = convecterTimeJob - convertertimeNow;
+        int substraction = Math.abs(convecterTimeJob - convertertimeNow);
         if (timeMinuteWay <= substraction)
             System.out.println("Успеете на работу");
         else System.out.println("Не успеете");
