@@ -1,6 +1,6 @@
 public class Main {
     public static void main(String[] args) {
-        HomeworkTwoSix homeworkTwoFive = new HomeworkTwoSix();
+        HomeworkTwoFive homeworkTwoFive = new HomeworkTwoFive();
         homeworkTwoFive.check();
     }
 }
