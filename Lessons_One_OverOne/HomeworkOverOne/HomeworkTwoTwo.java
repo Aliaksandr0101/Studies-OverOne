@@ -1,3 +1,4 @@
+package HomeworkOverOne;
 
 import java.util.Scanner;
 

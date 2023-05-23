@@ -1,3 +1,5 @@
+package HomeworkOverOne;
+
 import javax.swing.*;
 import java.sql.SQLOutput;
 import java.util.Scanner;
