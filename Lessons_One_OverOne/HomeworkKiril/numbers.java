@@ -1,28 +1,26 @@
-package HoneworkKiril;
-
+package HomeworkKiril;
 import java.util.Scanner;
 
-public class HomeworkKirillOne {
-    public void check() {
+public class numbers {
+    public void check(){
         int a, b, c, temp;
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Enter three numbers");
         a = scanner.nextInt();
         b = scanner.nextInt();
         c = scanner.nextInt();
         scanner.close();
 
-        if (b <= c) {
+        if (b>=c){
             temp = b;
             b = c;
             c = temp;
         }
-        if (a <= b) {
-            temp = b;
-            b = a;
-            a = temp;
+        if (a>=b) {
+            temp = a;
+            a = b;
+            b = temp;
         }
-        if (b <= c) {
+        if (b>=c) {
             temp = b;
             b = c;
             c = temp;
@@ -31,4 +29,6 @@ public class HomeworkKirillOne {
         System.out.println(b);
         System.out.println(c);
     }
+
+
 }
