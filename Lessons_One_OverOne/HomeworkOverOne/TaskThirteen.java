@@ -12,6 +12,7 @@ public class TaskThirteen {
             System.out.println("you enter number less zero or zero. repeat input");
             number = scanner.nextLong();
         }
+        scanner.close();
         count = number - 1;
 
         while (count < number){
