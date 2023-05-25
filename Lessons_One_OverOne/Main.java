@@ -1,8 +1,9 @@
-import HomeworkOverOne.TaskEleven;
+
+import HomeworkOverOne.TaskTwelve;
 
 public class Main {
     public static void main(String[] args) {
-        TaskEleven taskTen = new TaskEleven();
-        taskTen.check();
+        TaskTwelve task = new TaskTwelve();
+        task.check();
     }
 }
