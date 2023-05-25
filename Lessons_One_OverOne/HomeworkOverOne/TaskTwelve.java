@@ -16,9 +16,10 @@ public class TaskTwelve {
 
         while (result <= number) {
             result = count * count;
-            String output = result<=number?"output " + result: "the end";
+            String output = result<=number?"output: " + result: "the end";
             System.out.println(output);
             count++;
         }
+
     }
 }
