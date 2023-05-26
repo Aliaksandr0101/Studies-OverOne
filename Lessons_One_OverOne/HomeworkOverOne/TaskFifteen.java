@@ -24,11 +24,11 @@ public class TaskFifteen {
                 number = postNumder;
                 postNumder = scanner.nextInt();
                 if (postNumder ==0 ){
-                    System.out.println("more no local max");
+                    System.out.println("zero - command ending");
                     break;
                 }
                 if (number>preNumber&&number>postNumder){
-                    System.out.println("local max = " + number);
+                    System.out.println("next local max = " + number);
             }
         }
     }
