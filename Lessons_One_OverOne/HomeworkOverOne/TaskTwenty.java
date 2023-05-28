@@ -19,11 +19,13 @@ public class TaskTwenty {
         if (numberA == 0) {
             System.out.println("equation not root");
          }
-        if (numberA != 0 && numberB != 0){
+       else {
             root = -1.0*(numberB)/numberA;
-            System.out.println("root x = " + root);
-        } else{
-            System.out.println("equation have one root x = 0");}
+            String result;
+            result = (root == -0) ?"equation have one root x = 0": "root x = " + root;
+            System.out.println(result);
+
+        }
     }
 
     }
