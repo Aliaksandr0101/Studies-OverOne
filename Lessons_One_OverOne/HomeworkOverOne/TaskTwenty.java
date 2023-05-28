@@ -21,8 +21,9 @@ public class TaskTwenty {
          }
        else {
             root = -1.0*(numberB)/numberA;
-            String result;
-            result = (root == -0) ?"equation have one root x = 0": "root x = " + root;
+            String result = (root == -0)
+                    ?"equation have one root x = 0"
+                    : "root x = " + root;
             System.out.println(result);
 
         }
