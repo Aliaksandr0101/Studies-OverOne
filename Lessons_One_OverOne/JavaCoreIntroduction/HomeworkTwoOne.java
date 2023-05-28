@@ -1,7 +1,5 @@
-package HomeworkOverOne;
+package JavaCoreIntroduction;
 
-import javax.swing.*;
-import java.sql.SQLOutput;
 import java.util.Scanner;
 
 public class HomeworkTwoOne {

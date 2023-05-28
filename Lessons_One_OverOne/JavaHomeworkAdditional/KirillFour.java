@@ -1,4 +1,4 @@
-package HomeworkKiril;
+package JavaHomeworkAdditional;
 
 import java.util.Scanner;
 

@@ -1,4 +1,4 @@
-package HomeworkOverOne;
+package JavaCoreIntroduction;
 
 public class TaskEighteen {
     public void check(){

@@ -1,8 +1,7 @@
-package HomeworkOverOne;
+package JavaCoreIntroduction;
 
 import java.util.Scanner;
 
-import  java.util.Scanner;
 public class HomeworkTwoSix {
     public void check() {
         Scanner scanner = new Scanner(System.in);

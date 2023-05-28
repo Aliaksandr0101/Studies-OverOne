@@ -1,6 +1,4 @@
-package HomeworkOverOne;
-
-import org.w3c.dom.ls.LSOutput;
+package JavaCoreIntroduction;
 
 import java.util.Scanner;
 
