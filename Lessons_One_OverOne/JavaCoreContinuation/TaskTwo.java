@@ -13,8 +13,8 @@ public class TaskTwo {
 
     for (int i = 0; i < array.length; i++) {
         System.out.println("enter one array element");
-        element = scanner.nextInt();
-        array[i] = element;
+        array[i] = scanner.nextInt();
+
     }
     scanner.close();
     for (int j = 0; j < array.length; j = j+2) {

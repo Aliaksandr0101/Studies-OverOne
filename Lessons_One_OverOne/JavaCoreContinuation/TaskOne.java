@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TaskOne {
   public void check(){
       Scanner scanner = new Scanner(System.in);
-      int numberElements;
+      int numberElements, element;
       do {
           System.out.println("enter the number of elements");
           numberElements = scanner.nextInt();
@@ -15,8 +15,8 @@ public class TaskOne {
 
       for (int i = 0; i < array.length; i++) {
           System.out.println("enter one array element");
-          array[i]= scanner.nextInt();
-
+          element = scanner.nextInt();
+          array[i] = element;
       }
       scanner.close();
           for (int j = 1; j < array.length; j++) {
