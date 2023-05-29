@@ -1,9 +1,10 @@
 import JavaCoreContinuation.TaskOne;
+import JavaCoreContinuation.TaskTwo;
 
 public class Main {
     public static void main(String[] args) {
 
-        TaskOne task = new TaskOne();
+        TaskTwo task = new TaskTwo();
         task.check();
     }
 }
