@@ -1,10 +1,10 @@
-import JavaCoreContinuation.TaskOne;
-import JavaCoreContinuation.TaskTwo;
+
+import JavaCoreContinuation.TaskThree;
 
 public class Main {
     public static void main(String[] args) {
 
-        TaskTwo task = new TaskTwo();
+        TaskThree task = new TaskThree();
         task.check();
     }
 }
