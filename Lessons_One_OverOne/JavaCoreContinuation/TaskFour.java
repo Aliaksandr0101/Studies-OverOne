@@ -1,11 +1,10 @@
 package JavaCoreContinuation;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TaskFour {
     public void check(){
         Scanner scanner = new Scanner(System.in);
-        int numberElements, count = 0, element = 0, number = 0, size;
+        int numberElements, count = 0, number = 0, minHonest=0;
         do {
             System.out.println("enter array size");
             numberElements = scanner.nextInt();
@@ -13,14 +12,12 @@ public class TaskFour {
 
         int [] array = new int[numberElements];
 
-        while (element < array.length) {
-            System.out.println("enter one array element except zero");
-                size = scanner.nextInt();
-                if (size != 0){
-                    array[element] = size;
-                    element++;
-                }
+        for (int i = 0; i <array.length ; i++) {
+            System.out.println("enter one array element");
+            array[i] = scanner.nextInt();
+
         }
+
         scanner.close();
 
         for (int i = 0; i < array.length ; i++) {
@@ -38,7 +35,7 @@ public class TaskFour {
             }
         }
 
-        for (int i = 0; i <arrayHonest.length ; i++) {
+        for (int i = 0; i <arrayHonest.length-1 ; i++) {
             for (int j = 1; j <arrayHonest.length; j++) {
                 if (arrayHonest[i] > arrayHonest[j]){
                 int temp = arrayHonest[j];
@@ -46,12 +43,21 @@ public class TaskFour {
                 arrayHonest[i] = temp;
                 }
             }
-
         }
+
+        for (int i = 0; i < arrayHonest.length ; i++) {
+
+               if (arrayHonest[i] !=0) {
+                   minHonest = arrayHonest[i];
+                   break;
+               }
+        }
+        System.out.println(minHonest);
+
         System.out.println("new array elements");
         for (int i = 0; i <array.length ; i++) {
             double arrayI = array[i];
-            double arrayHonestMin = arrayHonest[0];
+            double arrayHonestMin = minHonest;
             double newElement = arrayI / arrayHonestMin;
             System.out.print(" " + newElement);
 
