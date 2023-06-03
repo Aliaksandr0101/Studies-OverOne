@@ -36,8 +36,21 @@ public class TaskFour {
             }
         }
 
+        boolean isSorted = false;
+        int temp;
+        while(!isSorted) {
+            isSorted = true;
+            for (int i = 0; i < arrayHonest.length - 1; i++) {
+                if (arrayHonest[i] > arrayHonest[i + 1]) {
+                    isSorted = false;
 
-        for (int i = 0; i <arrayHonest.length-1 ; i++) {
+                    temp = arrayHonest[i];
+                    arrayHonest[i] = arrayHonest[i + 1];
+                    arrayHonest[i + 1] = temp;
+                }
+            }
+        }
+        /*for (int i = 0; i <arrayHonest.length-1 ; i++) {
             for (int j = 1; j <arrayHonest.length; j++) {
                 if (arrayHonest[i] > arrayHonest[j]){
                 int temp = arrayHonest[j];
@@ -45,7 +58,7 @@ public class TaskFour {
                 arrayHonest[i] = temp;
                 }
             }
-        }
+        }*/
 
         for (int i = 0; i < arrayHonest.length ; i++) {
 
