@@ -72,7 +72,7 @@ public class TaskFour {
              System.out.println("all elements array = 0");
          } else {
 
-             System.out.println("new array elements");
+             System.out.print("new array elements:");
              for (int i = 0; i < array.length; i++) {
                  double arrayI = array[i];
                  double arrayHonestMin = minHonest;
