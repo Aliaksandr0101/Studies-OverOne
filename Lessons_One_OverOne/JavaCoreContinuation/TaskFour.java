@@ -1,5 +1,4 @@
 package JavaCoreContinuation;
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class TaskFour {
@@ -10,13 +9,10 @@ public class TaskFour {
             System.out.println("enter array size");
             numberElements = scanner.nextInt();
         } while (numberElements < 0 || numberElements == 0);
-
         int [] array = new int[numberElements];
-
         for (int i = 0; i < array.length ; i++) {
             System.out.println("enter one array element");
             array[i] = scanner.nextInt();
-
         }
         scanner.close();
 
@@ -28,12 +24,10 @@ public class TaskFour {
         }
 
         for (int i = 0; i < array.length; i++) {
-
             if (array[i]%2==0 && array[i]<min && array[i]!=0){
                 min=array[i];
             }
         }
-
              System.out.print("new array elements:");
         if (min!=0){
              for (int i = 0; i < array.length; i++) {
