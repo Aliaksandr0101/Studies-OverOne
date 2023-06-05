@@ -4,7 +4,7 @@ import java.util.Scanner;
 public class TaskFour {
     public void check(){
         Scanner scanner = new Scanner(System.in);
-        int numberElements, min =0;
+        int numberElements, min;
         do {
             System.out.println("enter array size");
             numberElements = scanner.nextInt();
@@ -16,15 +16,10 @@ public class TaskFour {
         }
         scanner.close();
 
-        for (int i = 0; i < array.length ; i++) {
-            if (array[i] % 2 == 0 && array[i] != 0) {
-                min = array[i];
-                break;
-            }
-        }
+       min = array[0];
 
         for (int i = 0; i < array.length; i++) {
-            if (array[i]%2==0 && array[i]<min && array[i]!=0){
+            if ((min % 2 != 0 && array[i] % 2 == 0 && array[i]!=0) || (min > array[i] && array[i] % 2 == 0 && array[i]!=0) ){
                 min=array[i];
             }
         }
