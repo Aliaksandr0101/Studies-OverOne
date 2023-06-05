@@ -1,5 +1,4 @@
 package JavaCoreContinuation;
-
 import java.util.Scanner;
 
 public class TaskFive {
