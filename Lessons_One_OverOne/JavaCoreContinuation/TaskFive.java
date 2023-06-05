@@ -30,9 +30,10 @@ public class TaskFive {
             for (int j = 0; j < array.length; j++) {
                 if (array[i] == array[j] && i != j && array[i] != temp) {
                     count++;
-                    for (int k = 0; k < array.length; k++) {
-                        if (array[k] == array[j]) {
-                            array[k] = temp;
+
+                    for (int element:array) {
+                        if (element == array[j]) {
+                            array[j] = temp;
                         }
                     }
                 }
