@@ -1,4 +1,5 @@
 import JavaCoreContinuation.TaskFive;
+import JavaCoreContinuation.TaskSix;
 
 
 public class Main {

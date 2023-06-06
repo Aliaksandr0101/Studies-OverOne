@@ -1,10 +1,11 @@
 package JavaCoreContinuation;
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class TaskFive {
     public void check() {
         Scanner scanner = new Scanner(System.in);
-        int size, temp, count=0;
+        int size, temp=0, count=0;
         do {
             System.out.println("enter array is size");
             size = scanner.nextInt();
@@ -19,8 +20,8 @@ public class TaskFive {
         scanner.close();
 
         temp = array[0];
-        for (int element : array) {
-            if (element == temp){
+        for (int i = 1; i < array.length; i++) {
+            if (array[i] == temp){
                 count++;
                 break;
             }
@@ -30,14 +31,15 @@ public class TaskFive {
             for (int j = 0; j < array.length; j++) {
                 if (array[i] == array[j] && i != j && array[i] != temp) {
                     count++;
-
-                    for (int element:array) {
-                        if (element == array[j]) {
-                            array[j] = temp;
+                    for (int k = 0; k < array.length ; k++) {
+                        if (array[k]==array[j]) {
+                            array[k]=temp;
                         }
+
                     }
                 }
             }
+            System.out.println(Arrays.toString(array));
         }
 
         System.out.println("number of different equal elements = " +count);
