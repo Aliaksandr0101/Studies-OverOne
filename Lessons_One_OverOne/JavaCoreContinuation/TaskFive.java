@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TaskFive {
     public void check() {
         Scanner scanner = new Scanner(System.in);
-        int size, temp=0, count=0;
+        int size, temp, count=0;
         do {
             System.out.println("enter array is size");
             size = scanner.nextInt();
@@ -18,7 +18,6 @@ public class TaskFive {
             array[i] = scanner.nextInt();
         }
         scanner.close();
-
         temp = array[0];
         for (int i = 1; i < array.length; i++) {
             if (array[i] == temp){
@@ -35,11 +34,9 @@ public class TaskFive {
                         if (array[k]==array[j]) {
                             array[k]=temp;
                         }
-
                     }
                 }
             }
-            
         }
 
         System.out.println("number of different equal elements = " +count);
