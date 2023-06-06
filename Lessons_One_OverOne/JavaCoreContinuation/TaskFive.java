@@ -39,7 +39,7 @@ public class TaskFive {
                     }
                 }
             }
-            System.out.println(Arrays.toString(array));
+            
         }
 
         System.out.println("number of different equal elements = " +count);
