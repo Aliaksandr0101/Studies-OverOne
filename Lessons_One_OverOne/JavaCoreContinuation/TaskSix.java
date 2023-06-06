@@ -10,12 +10,12 @@ public class TaskSix {
         do {
             System.out.println("pls enter size line");
             sizeLine = scanner.nextInt();
-        }while(sizeLine > 0);
+        }while(sizeLine <= 0);
         do {
             System.out.println("pls enter size column");
             sizeColumn = scanner.nextInt();
-        }while(sizeLine > 0);
-        scanner.close();
+        }while(sizeLine <= 0);
+
 
         int [][] matrix = new int[sizeLine][sizeColumn];
         for (int i = 0; i < sizeLine ; i++) {
@@ -23,6 +23,7 @@ public class TaskSix {
                 matrix[i][j]=scanner.nextInt();
             }
         }
+        scanner.close();
         int max = matrix[0][0];
         for (int i = 0; i < sizeLine ; i++) {
             for (int j = 0; j < matrix[i].length ; j++) {
@@ -35,10 +36,11 @@ public class TaskSix {
         for (int i = 0; i < sizeLine ; i++) {
             for (int j = 0; j < matrix[i].length ; j++) {
                 if (matrix[i][j]==max) {
-                    System.out.println("index of maximum element i = " + (i + 1) +" j = " + (j + 1));
-                    break;
+                    System.out.println("index of maximum element i = " + i + " j = " + j);
+                    return;
                 }
             }
+
         }
         System.out.println(max);
     }
