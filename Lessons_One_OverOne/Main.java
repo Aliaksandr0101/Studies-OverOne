@@ -1,7 +1,8 @@
+import JavaCoreContinuation.TaskEight;
 import JavaCoreContinuation.TaskSeven;
 public class Main {
     public static void main(String[] args) {
-        TaskSeven task = new TaskSeven();
+        TaskEight task = new TaskEight();
         task.check();
     }
 }
