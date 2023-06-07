@@ -37,11 +37,9 @@ public class TaskSix {
             for (int j = 0; j < matrix[i].length ; j++) {
                 if (matrix[i][j]==max) {
                     System.out.println("index of maximum element i = " + i + " j = " + j);
-                    return;
+                    break;
                 }
             }
-
         }
-        System.out.println(max);
     }
 }
