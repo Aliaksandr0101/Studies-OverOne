@@ -19,8 +19,15 @@ public class TaskSeven {
 
         for (int i = 0; i < sizeLine; i++) {
             for (int j = 0; j < sizeColumn ; j++) {
-                matrix[i][j] = (int) ((Math.random()*20))*3;
+                matrix[i][j] = (int) (Math.random()*20);
                 System.out.print(matrix[i][j] + " ");
+            }
+            System.out.println();
+        }
+        System.out.println();
+        for (int i = 0; i < sizeLine ; i++) {
+            for (int j = 0; j < sizeColumn ; j++) {
+                System.out.print((matrix[i][j]*3) + " ");
             }
             System.out.println();
         }
