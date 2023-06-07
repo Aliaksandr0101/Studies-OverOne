@@ -27,7 +27,8 @@ public class TaskSeven {
         System.out.println();
         for (int i = 0; i < sizeLine ; i++) {
             for (int j = 0; j < sizeColumn ; j++) {
-                System.out.print((matrix[i][j]*3) + " ");
+                matrix[i][j] *= 3;
+                System.out.print(matrix[i][j] + " ");
             }
             System.out.println();
         }
