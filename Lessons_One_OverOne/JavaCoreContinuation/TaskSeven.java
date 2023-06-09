@@ -32,5 +32,6 @@ public class TaskSeven {
             }
             System.out.println();
         }
+
     }
 }

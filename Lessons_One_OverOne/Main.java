@@ -1,14 +1,14 @@
-import JavaCoreContinuation.TaskEight;
-import JavaCoreContinuation.TaskNine;
-import JavaCoreContinuation.TaskSeven;
+import ClassString.TaskOne;
+
 public class Main {
     public static void main(String[] args) {
+        TaskOne  taskOne = new TaskOne();
+        taskOne.check();
 
 
 
 
-        TaskSeven task = new TaskSeven();
-        task.check();
+
     }
 }
 
