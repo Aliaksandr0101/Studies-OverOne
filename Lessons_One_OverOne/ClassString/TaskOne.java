@@ -20,8 +20,8 @@ public class TaskOne {
             }
         }
         String conclusion = (count  > 0)
-                ? "this symbol repeats " + count : "this symbol is't here";
-
+                ? "this symbol repeats " + count
+                : "this symbol is not here";
         System.out.println(conclusion);
     }
 }
