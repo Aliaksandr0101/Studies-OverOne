@@ -6,7 +6,7 @@ public class TaskTwo {
     public void check(){
         int count = 0;
     Scanner scanner = new Scanner(System.in);
-    System.out.println("pls enter enter something (string or number)");
+    System.out.println("pls enter  something (string or number)");
     String string = scanner.nextLine();
 
     char [] stringChar = string.toCharArray();
