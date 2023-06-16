@@ -4,8 +4,6 @@ import java.util.Scanner;
 
 public class TaskFour {
     public void check(){
-        String s = "125sdf";
-      /* boolean k = isNumeric(s);*/
         Scanner scanner = new Scanner(System.in);
         System.out.println("pls enter any words");
         String words = scanner.nextLine();
