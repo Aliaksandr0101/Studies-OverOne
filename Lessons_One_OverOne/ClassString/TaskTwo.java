@@ -20,7 +20,7 @@ public class TaskTwo {
                 count++;
             } else {
                 System.out.println("it is not number");
-                System.exit(1);
+                System.exit(0);
             }
         }
     } else {
@@ -30,7 +30,7 @@ public class TaskTwo {
                 count++;
             } else {
                 System.out.println("it is not number");
-                System.exit(1);
+                System.exit(0);
             }
         }
     }

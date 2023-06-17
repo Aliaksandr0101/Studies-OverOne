@@ -1,9 +1,11 @@
 package ClassString;
-
 import java.util.Scanner;
 
 public class TaskFour {
+
     public void check(){
+
+
         Scanner scanner = new Scanner(System.in);
         System.out.println("pls enter any words");
         String words = scanner.nextLine();
@@ -16,7 +18,7 @@ public class TaskFour {
                 maxWord = wordsArray[i];
             }
         }
-        System.out.println("this is the longest word" + maxWord);
+        System.out.println("this is the longest word " + maxWord);
     }
     public void checkTWo(){
         Scanner scanner = new Scanner(System.in);
@@ -29,7 +31,7 @@ public class TaskFour {
         result = firstLine.toLowerCase().contains(secondLine.toLowerCase());
         if (result){
             System.out.println("the first line contains the second");
-            System.exit(1);
+            System.exit(0);
         }
         result = firstLine.toUpperCase().contains(secondLine.toUpperCase());
         if (result){

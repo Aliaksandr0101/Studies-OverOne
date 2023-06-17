@@ -5,8 +5,8 @@ import ClassString.TaskTwo;
 
 public class Main {
     public static void main(String[] args) {
-        TaskTwo task = new TaskTwo();
-        task.check();
+        TaskFour task = new TaskFour();
+        task.checkTWo();
     }
 }
 
