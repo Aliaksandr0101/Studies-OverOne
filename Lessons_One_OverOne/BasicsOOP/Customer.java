@@ -22,6 +22,7 @@ public class Customer {
         System.out.println("enter phone number");
         if (scanner.hasNextLong()){
             customerSecond.numberPhone = scanner.nextLong();
+            scanner.close();
             String result = customerSecond.numberPhone == customer.numberPhone
                     ? "phone number matches"
                     : "phone number  does not match";
@@ -29,6 +30,7 @@ public class Customer {
         }
         else{
             System.out.println("You did not enter a phone number. Restart the program and try again");
+            scanner.close();
         }
 
       }
