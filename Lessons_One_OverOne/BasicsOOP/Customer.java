@@ -19,13 +19,13 @@ public class Customer {
       public void check(Customer customer){
         Customer customerSecond = new Customer();
         Scanner scanner = new Scanner(System.in);
-        System.out.println("enter phone number");
+        System.out.println("Pls enter phone number. Phone number consists of 12 digits");
         if (scanner.hasNextLong()){
             customerSecond.numberPhone = scanner.nextLong();
             scanner.close();
             String result = customerSecond.numberPhone == customer.numberPhone
-                    ? "phone number matches"
-                    : "phone number  does not match";
+                    ? "Your phone number matches"
+                    : "Your phone number  does not match";
             System.out.println(result);
         }
         else{
