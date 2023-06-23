@@ -8,7 +8,7 @@ public class QuadraticEquation {
         this.b = b;
         this.c = c;
         discriminant = b * b  - 4 * a * c;
-        System.out.printf("%s%d", "dicriminant = ", discriminant);
+        System.out.printf("%s%d", "discriminant = ", discriminant);
     }
     public static void main(String[] args) {
         QuadraticEquation quadraticEquation = new QuadraticEquation();
