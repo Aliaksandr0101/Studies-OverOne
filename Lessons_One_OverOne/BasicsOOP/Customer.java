@@ -1,5 +1,4 @@
 package BasicsOOP;
-
 import java.util.Scanner;
 
 public class Customer {
@@ -9,12 +8,14 @@ public class Customer {
         customerFirst.name ="Petr";
         customerFirst.dateOfBirth = "08.12.1994";
         customerFirst.numberPhone = 375257540828L;
-        customerFirst.check(customerFirst);
+        customerFirst.address = "Шевченко 5";
+        customerFirst.сompare(customerFirst);
     }
-    String surname;
-    String name;
-    String dateOfBirth;
-    long numberPhone ;
+     String surname;
+     String name;
+     String dateOfBirth;
+     String address;
+     long numberPhone ;
 
       public void check(Customer customer){
         Customer customerSecond = new Customer();
@@ -32,6 +33,17 @@ public class Customer {
             System.out.println("You did not enter a phone number. Restart the program and try again");
             scanner.close();
         }
-
       }
+      public void сompare( Customer customer ) {
+          Customer customerSecond = new Customer();
+          Scanner scanner = new Scanner(System.in);
+          System.out.printf("%s%n", "pls enter your address through one space: name street and number house ");
+          customerSecond.address = scanner.nextLine();
+
+          String result = (customer.address.equals(customerSecond.address))
+                  ? "this address matches"
+                  : "this address not matches";
+          System.out.println(result);
+          }
 }
+
