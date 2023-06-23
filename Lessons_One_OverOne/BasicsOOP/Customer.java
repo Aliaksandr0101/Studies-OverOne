@@ -39,6 +39,7 @@ public class Customer {
           Scanner scanner = new Scanner(System.in);
           System.out.printf("%s%n", "pls enter your address through one space: name street and number house ");
           customerSecond.address = scanner.nextLine();
+          scanner.close();
 
           String result = (customer.address.equals(customerSecond.address))
                   ? "this address matches"
