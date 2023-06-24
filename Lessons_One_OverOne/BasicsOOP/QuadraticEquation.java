@@ -15,13 +15,14 @@ public class QuadraticEquation {
     public void define( int discriminant ){
         this.discriminant = discriminant;
         if ( discriminant > 0 ) {
-           calculate(discriminant);
+            System.out.printf("%s%n", "The equation has two roots. Find roots, use the method calculate.");
         }else {
-            System.out.printf("%s","The equation has no roots because discriminant < 0");
+            System.out.printf("%s%n","The equation has no roots, because discriminant < 0. Restart and enter new coefficients");
             System.exit(0);
         }
     }
     public void calculate (int discriminant){
+        this.discriminant = discriminant;
         rootOne = (-b + Math.sqrt(discriminant)) / 2 * a;
         rootTwo = (-b - Math.sqrt(discriminant)) / 2 * a;
         System.out.printf("%s%f%n", "rootOne = ", rootOne);
@@ -30,8 +31,8 @@ public class QuadraticEquation {
     }
     public static void main(String[] args) {
         QuadraticEquation quadraticEquation = new QuadraticEquation();
-        quadraticEquation.define(quadraticEquation.decide(9, 7, 4));
-
-
+        int discriminant = quadraticEquation.decide(10, 9, 4);
+        quadraticEquation.define(discriminant);
+        quadraticEquation.calculate(discriminant);
     }
 }
