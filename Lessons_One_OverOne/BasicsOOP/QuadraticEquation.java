@@ -31,7 +31,7 @@ public class QuadraticEquation {
     }
     public static void main(String[] args) {
         QuadraticEquation quadraticEquation = new QuadraticEquation();
-        int discriminant = quadraticEquation.decide(10, 9, 4);
+        int discriminant = quadraticEquation.decide(1, 9, 4);
         quadraticEquation.define(discriminant);
         quadraticEquation.calculate(discriminant);
     }
