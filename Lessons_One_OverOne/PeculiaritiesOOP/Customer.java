@@ -6,7 +6,7 @@ public class Customer {
         this.name = name;
         this.address = address;
     }
-    public void compare(Order order ){
+    public void compare(Order order){
         String result = (order.name.equalsIgnoreCase(this.name) && order.address.equalsIgnoreCase(this.address))
                 ? "this order belongs to the current customer"
                 : "this order does not belong to the current customer";
