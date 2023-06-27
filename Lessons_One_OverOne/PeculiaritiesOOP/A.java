@@ -2,12 +2,8 @@ package PeculiaritiesOOP;
 
 public class A {
     public interface Bird {
-       default void takeOff(){
-           System.out.println("I taking off");
-       }
-        default void sit(){
-            System.out.println("I siting dawn");
-        }
+        void takeOff();
+        void sit();
     }
 
     static class Finch implements Bird{
