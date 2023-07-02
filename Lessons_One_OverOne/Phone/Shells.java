@@ -13,7 +13,7 @@ public class Shells {
             String line = scanner.next();
             try {
                 numberAfterParse = Integer.parseInt(line);
-                System.out.printf("%s%s%d\n", "pls enter any line:", " ", numberAfterParse);
+                System.out.printf("%s%s%d\n", "pls enter any line", ": ", numberAfterParse);
 
             } catch (NumberFormatException e) {
                 System.out.printf("%s\n", "Not valid");
