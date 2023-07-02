@@ -20,6 +20,7 @@ public class Shells {
                 System.out.printf("%s\n", "Not valid");
             }
         }
+        scanner.close();
     }
     public void checkPartTwo() {
         int number = 120;
