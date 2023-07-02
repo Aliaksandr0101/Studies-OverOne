@@ -8,10 +8,9 @@ public class Shells {
         Scanner scanner = new Scanner(System.in);
         System.out.printf("%s\n", "pls enter the number of lines to check");
         numberOfLines = scanner.nextInt();
-        scanner.nextLine();
         for (int i = 0; i < numberOfLines; i++) {
             System.out.printf("%s\n", "pls enter any line");
-            String line = scanner.nextLine();
+            String line = scanner.next();
             try {
                 numberAfterParse = Integer.parseInt(line);
                 System.out.printf("%s%s%d\n", "pls enter any line", " ", numberAfterParse);
