@@ -33,5 +33,10 @@ public class TaskTwo {
                : "odd list more";
         System.out.printf("\n%s", result);
     }
-    
+    public static void main(String[] args) {
+        TaskTwo taskTwo = new TaskTwo();
+        taskTwo.create();
+        taskTwo.sortOut();
+
+    }
 }
