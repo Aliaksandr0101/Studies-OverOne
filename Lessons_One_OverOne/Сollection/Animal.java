@@ -22,7 +22,7 @@ public class Animal {
         allAnimal.add(elk);
         allAnimal.add(dog);
         allAnimal.add(elephant);
-        allAnimal.removeIf(a -> a.name.matches("(?i)[AEIOU][a-z]+"));
+        allAnimal.removeIf(a -> a.name.matches("(?i)[AEIOU]\\w+"));
         for (Animal element : allAnimal) {
             System.out.println(element.name);
 
