@@ -6,10 +6,9 @@ public class Task {
         PriorityQueue<Integer> numberQueue = new PriorityQueue<>(100);
         double numberAverage;
         int sumSizeElement = 0;
-        for (int i = 0; i < 5; i++) {
+        for (int i = 0; i < 100; i++) {
             int number = (int) (Math.random() * 200 - 100);
             numberQueue.add(number);
-            System.out.println(number);
         }
         System.out.printf("%s%s", "numberQueue:", " ");
         for (int element : numberQueue) {
