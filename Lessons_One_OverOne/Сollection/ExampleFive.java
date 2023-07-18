@@ -12,7 +12,7 @@ public class ExampleFive {
             int number = randomNumber.nextInt(30) - 15;
             arrayListNumbers.add(number);
         }
-        System.out.println(arrayListNumbers.toString());
+        
         Iterator<Integer> iterator = arrayListNumbers.iterator();
         while (iterator.hasNext()) {
             int element = iterator.next();
