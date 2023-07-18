@@ -1,5 +1,4 @@
 package Сollection;
-
 import java.util.Set;
 import java.util.TreeSet;
 
@@ -28,7 +27,5 @@ public class TaskThree {
         anyWords.add("finger");
         anyWords.add("success");
         System.out.println(anyWords);
-
-
     }
 }
