@@ -16,7 +16,7 @@ public class ExampleSeven {
         animals.add(new Animal("Cat", "Brown"));
         animals.add(new Animal("Cat", "Orange"));
         Collections.sort(animals, new ComparatorAnimal());
-
+        System.out.println(animals.toString());
     }
     public class Animal{
         private  String name;
@@ -33,7 +33,13 @@ public class ExampleSeven {
             return color;
         }
 
-
+        @Override
+        public String toString() {
+            return "Animal {" +
+                    "name = " + name + ", "+
+                    "colour = " + color +
+                    "}";
+        }
     }
     public class ComparatorAnimal implements Comparator<Animal>{
 

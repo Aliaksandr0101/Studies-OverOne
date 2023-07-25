@@ -1,4 +1,5 @@
 
+import Сollection.ExampleEight;
 import Сollection.ExampleSeven;
 import Сollection.ExampleSix;
 
@@ -6,7 +7,7 @@ import java.util.*;
 
 public class Main {
     public static void main(String[] args) {
-        ExampleSeven task = new ExampleSeven();
+        ExampleEight task = new ExampleEight();
         task.check();
     }
 }
