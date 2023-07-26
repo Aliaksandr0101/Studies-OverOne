@@ -1,13 +1,9 @@
 
-import Сollection.ExampleEight;
-import Сollection.ExampleSeven;
-import Сollection.ExampleSix;
-
-import java.util.*;
+import Сollection.ExampleNine;
 
 public class Main {
     public static void main(String[] args) {
-        ExampleEight task = new ExampleEight();
+        ExampleNine task = new ExampleNine();
         task.check();
     }
 }
